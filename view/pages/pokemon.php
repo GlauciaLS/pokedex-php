@@ -90,7 +90,7 @@ require '../../config/scripts.php';
                                                 $p = $p . "<br> •" . $ProximaEvolucao->name . " ";
                                             }
                                         } else {
-                                            $p = "This pokémon isn't part of an evolutionary line.";
+                                            $p = "This pokémon doesn't have any evolution.";
                                         }
                                         echo '<p align="center">' . $p . '</p></a>';
                                         ?>
@@ -101,7 +101,9 @@ require '../../config/scripts.php';
                 }
             } ?>
         </div> 
-    <?php } 
+    <?php } else {
+        header("location: index.php");
+    } 
     if((isset($verifyNum) && $verifyNum != '1' ) || (isset($verifyType) && $verifyType != '1')){
         ?>
         <center><img src="../../assets/img/pikachu.jpg" alt="pikachu" style="width: 350px; height: 350px; border-radius: 10px;"></center>
