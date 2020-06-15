@@ -1,0 +1,12 @@
+{
+    "name": "tommo/pokedex",
+    "authors": [
+        {
+            "name": "Glaucia Silva",
+            "email": "glaucia.ap1258@gmail.com"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "*"
+    }
+}
